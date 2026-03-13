@@ -4,4 +4,26 @@
 @theme {
     --font-Poppins: 'Poppins', sans-serif;
     --font-Dynalight: 'Dynalight', cursive;
+
+    --color-warm-white: #f5f5f5;
+}
+
+body{
+    @apply bg-yellow-50
+}
+
+h1 {
+    @apply text-5xl md:text-6xl lg:text-7xl font-bold;
+}
+
+.container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+button {
+    @apply px-6 py-3 rounded-lg flex items-center gap-4 bg-yellow-500 w-fit font-semibold transition-all duration-300 ease-in-out cursor-pointer; 
+}
+
+button:hover {
+    @apply opacity-95 shadow-lg -translate-y-1;
 }
