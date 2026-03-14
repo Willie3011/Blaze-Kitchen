@@ -4,7 +4,7 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 
 const Hero = () => {
   return (
-    <section className={`h-dvh bg-no-repeat bg-cover bg-center bg-fixed text-warm-white flex items-center justify-center`} style={{ backgroundImage: `url(${background})` }}>
+    <section className={`h-screen w-screen bg-no-repeat bg-cover bg-center bg-fixed overflow-hidden text-warm-white flex flex-col items-center justify-center gap-4`} style={{ backgroundImage: `url(${background})` }}>
       <div className="container flex items-center justify-center gap-12 flex-col md:flex-row">
         <div className="flex flex-col space-y-5 w-full md:w-1/2">
           <h1 className='tracking-wide'>Your Go-To Spot for Quick and <span className='text-green-500'>Tasty Eats!</span></h1>
