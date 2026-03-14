@@ -9,7 +9,7 @@ const Hero = () => {
         <div className="flex flex-col space-y-5 w-full md:w-1/2">
           <h1 className='tracking-wide'>Your Go-To Spot for Quick and <span className='text-green-500'>Tasty Eats!</span></h1>
           <p className='md:text-lg text-warm-white/80 max-w-120'>It is a long established fact that a reader will be distracted by the readable content of a page when looking...</p>
-          <button className='outline-none'>Order Now <FaLongArrowAltRight /></button>
+          <button className='button outline-none'>Order Now <FaLongArrowAltRight /></button>
         </div>
         <div className="w-full md:w-1/2">
           <div className="w-full h-full overflow-hidden">

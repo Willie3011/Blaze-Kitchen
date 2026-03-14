@@ -20,10 +20,19 @@ h1 {
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
 }
 
-button {
-    @apply px-6 py-3 rounded-lg flex items-center gap-4 bg-yellow-500 w-fit font-semibold transition-all duration-300 ease-in-out cursor-pointer; 
+.button {
+    @apply px-6 py-3 rounded-lg flex items-center gap-4 bg-yellow-500 text-black w-fit font-semibold transition-all duration-300 ease-in-out cursor-pointer; 
 }
 
-button:hover {
+.button:hover {
     @apply opacity-95 shadow-lg -translate-y-1;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }

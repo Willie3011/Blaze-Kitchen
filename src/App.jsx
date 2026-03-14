@@ -13,8 +13,8 @@ import Footer from './components/Footer'
 function App() {
   return (
     <>
-      <Navbar />
       <main className='h-dvh w-full font-Poppins'>
+        <Navbar />
         <Hero />
         <Categories />
         <About />
@@ -24,8 +24,8 @@ function App() {
         <Contact />
         <Reviews />
         <Blog />
+        <Footer />
       </main>
-      <Footer />
     </>
   )
 }
