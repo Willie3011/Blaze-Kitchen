@@ -16,6 +16,10 @@ h1 {
     @apply text-5xl md:text-6xl lg:text-7xl font-bold;
 }
 
+h2 {
+    @apply text-4xl md:text-5xl lg:text-6xl font-bold;
+}
+
 .container {
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
 }
