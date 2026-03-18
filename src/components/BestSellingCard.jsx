@@ -3,8 +3,8 @@ import { FaStar } from "react-icons/fa6";
 const BestSellingCard = ({ index, best }) => {
     console.log(best)
     return (
-        <div key={index} className="snap-both flex flex-col min-w-62.5 space-y-4">
-            <div className="h-60 w-60">
+        <div key={index} className="snap-start flex flex-col min-w-62.5 space-y-4">
+            <div className="h-60 w-full">
                 <img src={best.img} alt={best.name} className="w-full h-full object-contain" />
             </div>
             <h3 className="font-semibold text-sm">{best.name}</h3>
