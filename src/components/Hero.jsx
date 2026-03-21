@@ -13,7 +13,7 @@ const Hero = () => {
         </div>
         <div className="w-full md:w-1/2 flex items-center justify-center">
           <div className="w-full h-full max-md:w-3/4 overflow-hidden">
-            <img src={ heroImg} alt="A burger" className='h-full w-full object-cover'/>
+            <img src={ heroImg} loading='lazy' alt="A burger" className='h-full w-full object-cover'/>
           </div>
         </div>
       </div>
