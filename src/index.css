@@ -49,3 +49,19 @@ h2 {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+/* index.css */
+
+.swiper .swiper-pagination-bullet {
+  background: #d1d5db !important;
+  opacity: 1;
+  width: 8px;
+  height: 8px;
+}
+
+.swiper .swiper-pagination-bullet-active {
+  background: #f0b100 !important;
+  width: 24px;
+  height: 10px;
+  border-radius: 9999px;
+}
