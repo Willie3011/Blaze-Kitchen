@@ -29,6 +29,14 @@ h2 {
     @apply px-6 py-3 rounded-lg flex items-center gap-4 bg-yellow-500 text-black w-fit font-semibold transition-all duration-300 ease-in-out cursor-pointer; 
 }
 
+.button-3 {
+    @apply py-3 flex items-center gap-4 text-yellow-500 underline w-fit font-medium transition-all duration-300 ease-in-out cursor-pointer; 
+}
+
+.button-3:hover {
+    @apply -translate-y-1 no-underline
+}
+
 .button:hover {
     @apply opacity-95 shadow-lg -translate-y-1;
 }
