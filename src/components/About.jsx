@@ -20,12 +20,12 @@ const About = () => {
         {/* content */}
         <div className="space-y-5 md:w-1/2 w-full">
           <h2 className="text-center lg:text-start">
-            Captivating Culinary <span className="text-green-500">Favorites.</span>
+            Crafted With Fire and <span className="text-green-500">Passion.</span>
           </h2>
-          <p className="font-medium text-center lg:text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nihil optio soluta quas dolore, fuga sit? Laudantium enim facilis odit culpa corporis molestias laboriosam ducimus nulla animi, labore omnis fuga.</p>
+          <p className="font-medium text-center lg:text-start">Blaze Kitchen was created for those who appreciate the art of truly good food. Every dish is thoughtfully prepared using carefully selected ingredients, flame-grilled techniques, and a dedication to delivering bold, refined flavors. From the first bite to the last, our focus is on quality, consistency, and creating moments worth savoring. Whether you're dining in or ordering out, Blaze Kitchen brings you a seamless blend of comfort, craftsmanship, and unforgettable taste.</p>
           <div className="flex items-center gap-4 flex-col sm:flex-row justify-center lg:justify-start">
-            <button className="button">Order Now <FaLongArrowAltRight /></button>
-            <button className="text-green-500 font-semibold text-lg underline cursor-pointer transition-all duration-300 hover:-translate-y-1">About Blaze Kitchen</button>
+            <button className="button text-nowrap">Explore Our Menu <FaLongArrowAltRight /></button>
+            <button className="text-green-500 font-semibold text-lg underline cursor-pointer transition-all duration-300 hover:-translate-y-1">Learn More</button>
 
           </div>
         </div>

@@ -9,7 +9,9 @@ const Footer = () => {
         <div className="flex flex-wrap gap-12 justify-between max-sm:justify-center max-sm:text-center">
           <div className="space-y-4 flex flex-col items-center">
             <h3 className='text-2xl font-bold flex flex-col items-center'><FaFireFlameCurved className='text-7xl me-2 text-center text-yellow-500 mb-2'/> Blaze Kitchen</h3>
-            <p className='max-w-60 text-balance text-sm max-sm:text-center'>There are many variations of passages of Lorem Ipsum available. bu the majority have suffered alteration in some form.</p>
+            <p className='max-w-60 text-balance text-sm max-sm:text-center'>
+              Bringing bold flavors, passion, and fire to every unforgettable meal.
+              Experience quality, care, and taste that keeps you coming back.</p>
             <div className="space-y-2">
               <p className='flex items-center gap-2 text-sm'><span className='text-lg text-yellow-500'><FaPhoneVolume /></span> (001) 123 456 789</p>
               <p className='flex items-center gap-2 text-sm'><span className='text-lg text-yellow-500'><FaEnvelope /></span> info@blazekitchen.com</p>
@@ -58,8 +60,8 @@ const Footer = () => {
             </h3>
 
             <p className="text-sm text-gray-400">
-              But I must explain to you how all this mistaken idea of denouncing pleasure
-              and praising pain was born and I will give you a complete account of the system.
+              Join our newsletter to receive exclusive updates, mouth-watering recipes, and special offers.
+              Be the first to know about new menu items, limited-time specials, and unforgettable dining experiences.
             </p>
 
             <form

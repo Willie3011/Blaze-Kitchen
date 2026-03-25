@@ -7,7 +7,7 @@ const Contact = () => {
       <div className="container py-36 flex items-center justify-between flex-col-reverse lg:flex-row gap-12">
         <div className="w-full lg:w-1/2">
           <form className='w-full min-h-80 h-auto rounded-xl bg-warm-white text-black shadow-lg px-4 py-6 space-y-6 flex flex-col items-center'>
-            <h3 className='text-xl md:text-2xl lg:text-3xl font-medium px-4'>Smooth Reservations for Memorable Dining Experiences</h3>
+            <h3 className='text-xl md:text-2xl lg:text-3xl font-medium px-4'>Book now for a flawless dining experience.</h3>
             <div className="w-full h-full grid grid-cols-2 md:gap-x-4 px-6 space-y-4">
               <div className="col-span-2 md:col-span-1">
                 <label htmlFor="name" className='text-sm'>Your Name*</label>
@@ -41,13 +41,14 @@ const Contact = () => {
               <button className='button'>Request Resevation</button>
           </form>
         </div>
-        <div className="flex flex-col w-full lg:w-1/2 space-y-6 max-lg:text-center">
-          <h2>Elevate Your Dining Experience with a Reserved Table at <span className='text-green-500'>Blaze Kitchen</span></h2>
+        <div className="flex flex-col items-center w-full lg:w-1/2 space-y-6 max-lg:text-center">
+          <h2>Reserve Your Table For An Unforgettable Dining Experience at <span className='text-green-500'>Blaze Kitchen</span></h2>
           <p className='text-warm-white/80'>
-            On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire.
+            Secure your spot and enjoy a meal crafted with care.
+            Every detail is designed to ensure comfort, flavor, and satisfaction.
           </p>
 
-          <button className='w-full button'>Read More <FaLongArrowAltRight/></button>
+          <button className='w-full button'>Explore Our Menu <FaLongArrowAltRight/></button>
         </div>
       </div>
     </section>

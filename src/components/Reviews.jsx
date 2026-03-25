@@ -48,8 +48,9 @@ const Reviews = () => {
     <section className="relative overflow-hidden">
       <div className="container py-36 space-y-12 z-10">
         <div className="space-y-6">
-          <h2 className="z-20">Our Cherished <span className='text-green-500'>Patrons.</span></h2>
-          <p className='max-w-160'>Appreciation to those who sweeten our journey - our cherished patrons. Your unwavering support is the sugar in our recipe, infusing each moment with a delighful sweetness.</p>
+          <h2 className="z-20">What Our Customers <span className='text-green-500'>Say.</span></h2>
+          <p className='max-w-160'>Hear from diners who have savored our bold, flavorful meals.
+            Their experiences reflect the quality, care, and passion we deliver consistently.</p>
         </div>
 
         <div className="">

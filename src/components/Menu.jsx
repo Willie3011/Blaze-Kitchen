@@ -58,8 +58,9 @@ const Menu = () => {
       <div className="container py-36 space-y-12">
         <div className="flex flex-col lg:flex-row items-center justify-between space-y-4">
           <div className="space-y-4">
-            <h2 className='text-center lg:text-start lg:max-w-170'>Handpicked Culinary <span className='text-green-500'>Masterpieces</span></h2>
-            <p className='text-center lg:text-start lg:max-w-170 line-clamp-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, vel sint. Vero animi voluptatum consequuntur eos. Adipisci eum maiores illum accusamus molestiae eaque explicabo doloribus?</p>
+            <h2 className='text-center lg:text-start lg:max-w-170'>Explore Our <span className='text-green-500'>Menu</span></h2>
+            <p className='text-center lg:text-start lg:max-w-170 line-clamp-2'>Discover a curated selection of dishes crafted with bold flavors.
+Each meal is thoughtfully prepared to deliver quality, taste, and satisfaction.</p>
           </div>
 
           <button className='button text-nowrap'>View More <FaLongArrowAltRight /></button>

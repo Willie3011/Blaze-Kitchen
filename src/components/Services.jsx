@@ -8,23 +8,23 @@ import ServiceCard from './ServiceCard';
 const services = [
   {
     icon: icon1,
-    title: "Warm & Enjoy",
-    subtitle: "There are many variations of passages of lorem ipsum available, but the majority have suffered alteration in some form."
+    title: "Expertly Crafted Meals",
+    subtitle: "Our dishes are thoughtfully prepared using refined techniques to bring out bold, balanced, and memorable flavors."
   },
   {
     icon: icon2,
-    title: "Savour & Replay",
-    subtitle: "There are many variations of passages of lorem ipsum available, but the majority have suffered alteration in some form."
+    title: "Seamless Ordering Experience",
+    subtitle: "From browsing to checkout, every step is designed to be smooth, convenient, and effortlessly satisfying."
   },
   {
     icon: icon3,
-    title: "Delivery Services",
-    subtitle: "There are many variations of passages of lorem ipsum available, but the majority have suffered alteration in some form."
+    title: "Fast and Reliable Service",
+    subtitle: "Enjoy timely service without compromising quality, ensuring your meals arrive fresh, hot, and ready to enjoy."
   },
   {
     icon: icon4,
-    title: "Organic Food",
-    subtitle: "There are many variations of passages of lorem ipsum available, but the majority have suffered alteration in some form."
+    title: "Fresh, Premium Ingredients",
+    subtitle: "We use only carefully selected ingredients to ensure every dish delivers exceptional flavor and consistent quality."
   },
 ]
 
@@ -43,9 +43,13 @@ const Services = () => {
 
         {/* right - content */}
         <div className="space-y-8 w-full flex flex-col items-center lg:justify-center lg:items-start lg:w-1/2">
-          <h2 className='text-center lg:text-start'>The Choice of <span className='text-green-500'>Customers</span></h2>
-          <p className="lg:max-w-140 text-center lg:text-start lg:text-balance lg:text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro recusandae hic culpa veritatis debitis eum eligendi quis, quibusdam quia ducimus! Pariatur explicabo soluta sapiente recusandae a mollitia sint tempore voluptates?</p>
-          <button className='button'>View More <FaLongArrowAltRight/></button>
+          <h2 className='text-center lg:text-start'>Exceptional Service Rooted in  <span className='text-green-500'>Quality</span></h2>
+          <p className="lg:max-w-140 text-center lg:text-start lg:text-balance lg:text-xl">
+            We are committed to delivering more than just great meals.
+            Every detail is designed to enhance your overall dining experience.
+            From preparation to presentation, quality remains at the heart.
+            Enjoy consistency, care, and excellence with every single order.</p>
+          <button className='button'>Learn More <FaLongArrowAltRight/></button>
         </div>
       </div>
     </section>

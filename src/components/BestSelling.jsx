@@ -96,8 +96,9 @@ const BestSelling = () => {
       <div className="container py-16 space-y-12">
         {/* heading */}
         <div className="flex flex-col items-center justify-center space-y-4">
-          <h2>Best Selling <span className='text-green-500'>Items</span></h2>
-          <p className='text-center max-w-160 text-gray-700'>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system.</p>
+          <h2>Our Most Loved <span className='text-green-500'>Dishes</span></h2>
+          <p className='text-center max-w-160 text-gray-700'>Discover the dishes our customers keep coming back for every time.
+            Carefully crafted, full of flavor, and consistently delivering a truly satisfying experience.</p>
         </div>
 
         {/* slider */}
