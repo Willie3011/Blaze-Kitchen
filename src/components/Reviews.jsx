@@ -49,7 +49,7 @@ const Reviews = () => {
       <div className="container py-36 space-y-12 z-10">
         <div className="space-y-6">
           <h2 className="z-20">What Our Customers <span className='text-green-500'>Say.</span></h2>
-          <p className='max-w-160'>Hear from diners who have savored our bold, flavorful meals.
+          <p className='max-w-160 text-center lg:text-start'>Hear from diners who have savored our bold, flavorful meals.
             Their experiences reflect the quality, care, and passion we deliver consistently.</p>
         </div>
 
