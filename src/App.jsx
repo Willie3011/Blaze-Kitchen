@@ -13,6 +13,7 @@ import { useEffect, useState } from 'react'
 import Loader from './components/Loader'
 
 function App() {
+  const [openMenu, setOpenMenu] = useState(false);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -28,7 +29,7 @@ function App() {
   return (
     <>
       <main className='h-dvh w-full font-Poppins'>
-        <Navbar />
+        <Navbar setOpenMenu={setOpenMenu} openMenu={openMenu}/>
         <Hero />
         <Categories />
         <About />
@@ -39,6 +40,11 @@ function App() {
         <Reviews />
         <Blog />
         <Footer />
+        {
+          openMenu && (
+            <div onClick={() => setOpenMenu(prev => !prev)} className="fixed inset-0 bg-black/50 z-40" />
+          )
+        }
       </main>
     </>
   )
