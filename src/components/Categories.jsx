@@ -7,6 +7,10 @@ import kids from "../assets/kids.png";
 import { FaLongArrowAltLeft } from "react-icons/fa";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { useEffect, useRef, useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Navigation } from "swiper/modules";
+import 'swiper/css';
+import 'swiper/css/navigation';
 
 const categories = [
   {
@@ -36,77 +40,61 @@ const categories = [
 ];
 
 const Categories = () => {
-  const scrollRef = useRef(null);
-
-  const [canScrollLeft, setCanScrollLeft] = useState(false);
-  const [canScrollRight, setCanScrollRight] = useState(false);
-
-  const checkScroll = () => { 
-    const el = scrollRef.current;
-
-    if (!el) return;
-
-    setCanScrollLeft(el.scrollLeft > 0);
-    setCanScrollRight(el.scrollLeft + el.clientWidth < el.scrollWidth); 
-  }
-
-
-  const scrollLeft = () => {
-    scrollRef.current.scrollBy({
-      left: -250, behavior: 'smooth'
-    });
-  }
-
-  const scrollRight = () => {
-    scrollRef.current.scrollBy({
-      left: 250, behavior: 'smooth'
-    });
-  }
+  const [prevEl, setPrevEl] = useState(null);
+  const [nextEl, setNextEl] = useState(null);
+  const swiperRef = useRef(null); // ← useRef, not useState
 
   useEffect(() => {
-    const el = scrollRef.current;
-
-    checkScroll();
-
-    el.addEventListener("scroll", checkScroll);
-    window.addEventListener("resize", checkScroll);
-
-    return () => {
-      el.removeEventListener("scroll", checkScroll);
-      window.removeEventListener("resize", checkScroll)
+    if (swiperRef.current && prevEl && nextEl) {
+      swiperRef.current.params.navigation.prevEl = prevEl;
+      swiperRef.current.params.navigation.nextEl = nextEl;
+      swiperRef.current.navigation.destroy();
+      swiperRef.current.navigation.init();
+      swiperRef.current.navigation.update();
     }
-  }, [])
+  }, [prevEl, nextEl]);
 
   return (
     <section className='container h-[20vh]'>
       <div className="flex items-center justify-between h-full">
-        <button
-          onClick={scrollLeft}
-          disabled={!canScrollLeft}
-          className={`h-10 w-10 p-2 rounded-full flex items-center justify-center border-2 transition ${canScrollLeft ? "border-yellow-500 bg-yellow-500 text-warm-white hover:text-yellow-500 hover:bg-transparent" : "border-gray-300 text-gray-300 cursor-not-allowed"}`}>
-          <FaLongArrowAltLeft className='text-xl' />
-        </button>
-        <div ref={scrollRef} className="flex gap-10 overflow-x-auto scroll-smooth px-4 no-scrollbar snap-x snap-mandatory">
-          {
-            categories.map((category, index) => (
-              <div key={index} className="snap-start flex flex-col items-center min-w-30">
-                <div className="h-20 w-40">
-                  <img src={category.img} alt={category.name} className="w-full h-full object-contain" />
+        <div className="relative flex overflow-x-auto w-full">
+          <Swiper
+            modules={[Navigation]}
+            onSwiper={(swiper) => (swiperRef.current = swiper)} 
+            navigation={{ prevEl, nextEl }}
+            spaceBetween={10}
+            breakpoints={{
+              0: { slidesPerView: 2 },
+              640: { slidesPerView: 4 },
+              1024: { slidesPerView: 5 }
+            }}
+          >
+            {categories.map((category, index) => (
+              <SwiperSlide key={index}>
+                <div className="w-full flex flex-col items-center">
+                  <div className="h-20 w-40">
+                    <img src={category.img} alt={category.name} className="w-full h-full object-contain" />
+                  </div>
+                  <p className="font-medium">{category.name}</p>
                 </div>
-                <p className="font-medium">{category.name}</p>
-              </div>
-            ))
-          }
+              </SwiperSlide>
+            ))}
+          </Swiper>
+
+          <button
+            ref={(node) => setPrevEl(node)}
+            className="absolute top-1/2 left-0 -translate-y-1/2 z-10 p-2 rounded-full flex items-center justify-center transition bg-yellow-500">
+            <FaLongArrowAltLeft />
+          </button>
+          <button
+            ref={(node) => setNextEl(node)}
+            className="absolute top-1/2 right-0 -translate-y-1/2 z-10 p-2 rounded-full flex items-center justify-center transition bg-yellow-500">
+            <FaLongArrowAltRight />
+          </button>
         </div>
-        <button
-          onClick={scrollRight}
-          disabled={!canScrollRight}
-          className={`h-10 w-10 p-2 rounded-full flex items-center justify-center border-2 transition ${canScrollRight ? "border-yellow-500 bg-yellow-500 text-warm-white hover:text-yellow-500 hover:bg-transparent" : "border-gray-300 text-gray-300 cursor-not-allowed"}`}>
-          <FaLongArrowAltRight className='text-xl' />
-        </button>
       </div>
     </section>
-  )
+  );
 }
 
 export default Categories
