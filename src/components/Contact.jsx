@@ -3,7 +3,7 @@ import background from '../assets/hero_backgound.png'
 
 const Contact = () => {
   return (
-    <section className='h-auto w-screen bg-no-repeat bg-cover bg-center bg-fixed text-warm-white' style={{backgroundImage: `url(${background})`}}>
+    <section id='reserve' className='h-auto w-screen bg-no-repeat bg-cover bg-center bg-fixed text-warm-white' style={{backgroundImage: `url(${background})`}}>
       <div className="container py-36 flex items-center justify-between flex-col-reverse lg:flex-row gap-12">
         <div className="w-full lg:w-1/2">
           <form className='w-full min-h-80 h-auto rounded-xl bg-warm-white text-black shadow-lg px-4 py-6 space-y-6 flex flex-col items-center'>

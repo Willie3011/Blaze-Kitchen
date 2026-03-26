@@ -19,19 +19,19 @@ const Navbar = ({openMenu, setOpenMenu}) => {
             <a className="hover:text-yellow-500 duration-300 ease-in-out text-nowrap" href="#">Home</a>
           </li>
           <li>
-            <a className="hover:text-yellow-500 duration-300 ease-in-out text-nowrap" href="#">About Us</a>
+            <a className="hover:text-yellow-500 duration-300 ease-in-out text-nowrap" href="#about">About Us</a>
           </li>
           <li>
-            <a className="hover:text-yellow-500 duration-300 ease-in-out text-nowrap" href="#">Menu</a>
+            <a className="hover:text-yellow-500 duration-300 ease-in-out text-nowrap" href="#services">Services</a>
           </li>
           <li>
-            <a className="hover:text-yellow-500 duration-300 ease-in-out text-nowrap" href="#">Services</a>
+            <a className="hover:text-yellow-500 duration-300 ease-in-out text-nowrap" href="#menu">Menu</a>
           </li>
           <li>
-            <a className="hover:text-yellow-500 duration-300 ease-in-out text-nowrap" href="#">Blog</a>
+            <a className="hover:text-yellow-500 duration-300 ease-in-out text-nowrap" href="#reserve">Reserve Table</a>
           </li>
           <li>
-            <a className="hover:text-yellow-500 duration-300 ease-in-out text-nowrap" href="#">Contact Us</a>
+            <a className="hover:text-yellow-500 duration-300 ease-in-out text-nowrap" href="#blog">Blog</a>
           </li>
         </ul>
 
@@ -63,19 +63,19 @@ const Navbar = ({openMenu, setOpenMenu}) => {
               <a onClick={() => setOpenMenu(false)} className="hover:text-yellow-500 duration-300 ease-in-out text-nowrap" href="#">Home</a>
             </li>
             <li>
-              <a onClick={() => setOpenMenu(false)} className="hover:text-yellow-500 duration-300 ease-in-out text-nowrap" href="#">About Us</a>
+              <a onClick={() => setOpenMenu(false)} className="hover:text-yellow-500 duration-300 ease-in-out text-nowrap" href="#about">About Us</a>
             </li>
             <li>
-              <a onClick={() => setOpenMenu(false)} className="hover:text-yellow-500 duration-300 ease-in-out text-nowrap" href="#">Menu</a>
+              <a onClick={() => setOpenMenu(false)} className="hover:text-yellow-500 duration-300 ease-in-out text-nowrap" href="#menu">Menu</a>
             </li>
             <li>
-              <a onClick={() => setOpenMenu(false)} className="hover:text-yellow-500 duration-300 ease-in-out text-nowrap" href="#">Services</a>
+              <a onClick={() => setOpenMenu(false)} className="hover:text-yellow-500 duration-300 ease-in-out text-nowrap" href="#services">Services</a>
             </li>
             <li>
-              <a onClick={() => setOpenMenu(false)} className="hover:text-yellow-500 duration-300 ease-in-out text-nowrap" href="#">Blog</a>
+              <a onClick={() => setOpenMenu(false)} className="hover:text-yellow-500 duration-300 ease-in-out text-nowrap" href="#blog">Blog</a>
             </li>
             <li>
-              <a onClick={() => setOpenMenu(false)} className="hover:text-yellow-500 duration-300 ease-in-out text-nowrap" href="#">Contact Us</a>
+              <a onClick={() => setOpenMenu(false)} className="hover:text-yellow-500 duration-300 ease-in-out text-nowrap" href="#reserve">Reserve Table</a>
             </li>
           </ul>
         </div>

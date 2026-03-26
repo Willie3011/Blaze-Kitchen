@@ -30,8 +30,8 @@ const services = [
 
 const Services = () => {
   return (
-    <section className='h-fit bg-yellow-100'>
-      <div className="container py-32 flex flex-col-reverse gap-6 lg:flex-row">
+    <section id='services' className='h-fit bg-yellow-100'>
+      <div className="container py-36 flex flex-col-reverse gap-6 lg:flex-row">
         {/* left - grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full lg:w-1/2">
           {

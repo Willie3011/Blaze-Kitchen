@@ -3,7 +3,7 @@ import { FaLongArrowAltRight } from 'react-icons/fa'
 
 const Blog = () => {
   return (
-    <section className=''>
+    <section id='blog' className=''>
       <div className="container py-36 space-y-8">
         {/* heading */}
         <div className="flex flex-col text-center gap-4 items-center">

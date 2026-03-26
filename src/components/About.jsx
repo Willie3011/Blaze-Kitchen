@@ -4,7 +4,7 @@ import kebab from "../assets/kebab.jpg";
 
 const About = () => {
   return (
-    <section className='container min-h-[40vh] py-16'>
+    <section id="about" className='container min-h-[40vh] py-36'>
       <div className="flex items-center justify-between lg:flex-row flex-col-reverse gap-12">
         {/* images */}
         <div className="relative w-full lg:w-1/2 grid grid-cols-2 lg:flex flex-wrap lg:flex-row justify-center md:justify-start">

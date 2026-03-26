@@ -54,7 +54,7 @@ const menuItems = [
 
 const Menu = () => {
   return (
-    <section className=''>
+    <section id='menu' className=''>
       <div className="container py-36 space-y-12">
         <div className="flex flex-col lg:flex-row items-center justify-between space-y-4">
           <div className="space-y-4">

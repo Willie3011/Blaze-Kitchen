@@ -9,6 +9,10 @@
     --color-background: #121212;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     @apply bg-yellow-50
 }
